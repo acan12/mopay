@@ -42,7 +42,7 @@ android {
         targetCompatibility = '1.8'
     }
     sourceSets {
-        main.res.srcDirs += ['src/main/res-activities',
+        main.res.srcDirs += ['src/main/res-activity',
                              'src/main/res-fragment',
                              'src/main/res-content',
                              'src/main/res-row']
