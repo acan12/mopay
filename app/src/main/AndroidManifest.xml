@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="app.beelabs.com.mopay">
+          xmlns:tools="http://schemas.android.com/tools" package="app.beelabs.com.mopay">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
             android:name=".App"
@@ -17,6 +25,15 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:name=".ui.activity.payment.PaymentMethodActivity" android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.SuccessActivity" android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.product.CartProductActivity" android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.product.CheckoutProduct" android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.product.ScanQRActivity" android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.trx.HistoryDetailActivity" android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.trx.HistoryTransactionActivity" android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>
