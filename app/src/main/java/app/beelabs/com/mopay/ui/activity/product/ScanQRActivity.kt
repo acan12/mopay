@@ -7,8 +7,8 @@ import app.beelabs.com.mopay.R
 
 class ScanQRActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scanqr_activity)
     }
 }

@@ -1,13 +1,21 @@
 package app.beelabs.com.mopay.ui.activity.product
 
 import android.os.Bundle
-import android.os.PersistableBundle
+import android.webkit.WebSettings
 import app.beelabs.com.codebase.base.BaseActivity
+import app.beelabs.com.mopay.IConfig
 import app.beelabs.com.mopay.R
+import app.beelabs.com.mopay.ui.`interface`.IMainView
+import app.beelabs.com.mopay.ui.activity.HelloWorldClient
+import kotlinx.android.synthetic.main.activity_main.*
 
-class CartProductActivity : BaseActivity() {
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
-        setContentView(R.layout.activity_cart_product)
+class CartProductActivity : BaseActivity(), IMainView {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_timeline)
+
     }
 }
+
+

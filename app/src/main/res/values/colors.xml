@@ -3,4 +3,9 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="green">#82D96C</color>
+    <color name="yellow">#FFB800</color>
+    <color name="grey">#8B8B8B</color>
+
+    <color name="timeline_background">#e5ebec</color>
 </resources>

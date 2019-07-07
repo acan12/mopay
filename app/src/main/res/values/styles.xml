@@ -8,10 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-
     <style name="NoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="FontSFProDisplayBlack" parent="TextAppearance.AppCompat">
+        <item name="fontPath">SF-Pro-Display-Black.otf</item>
     </style>
 </resources>
