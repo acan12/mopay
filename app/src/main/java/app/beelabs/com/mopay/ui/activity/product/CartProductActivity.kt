@@ -16,7 +16,7 @@ class CartProductActivity : BaseActivity(), IMainView {
 
         cartOrderList.setHasFixedSize(true)
         cartOrderList.layoutManager = LinearLayoutManager(this)
-        cartOrderList.adapter = CartAdapter(null, this)
+        cartOrderList.adapter = CartAdapter(this)
 
     }
 }

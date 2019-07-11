@@ -2,8 +2,8 @@
 <android.support.constraint.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        xmlns:card="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
 
 
     <LinearLayout
@@ -17,31 +17,52 @@
                 android:layout_height="match_parent">
 
             <View
-                    android:id="@+id/topLine"
+                    android:id="@+id/verticalLine"
                     android:layout_width="5dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center|top"
-                    android:background="@color/green"/>
-            <View
-                    android:id="@+id/bottomLine"
-                    android:layout_width="5dp"
-                    android:layout_height="50dp"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center|bottom"
                     android:background="@color/green"/>
             <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
                     android:src="@drawable/circle_green"/>
 
         </FrameLayout>
 
-        <TextView
+        <android.support.v7.widget.CardView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="DODOL Jawa"
-                android:textColor="@color/blue"
-                android:layout_gravity="center_vertical"/>
+                android:layout_height="match_parent"
+                android:elevation="3dp"
+                card:cardCornerRadius="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/color_white">
+
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Title "
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="text content"
+                        android:textSize="12sp"
+                        android:textColor="@color/grey"
+                        android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
