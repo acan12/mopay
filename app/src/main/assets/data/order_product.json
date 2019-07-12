@@ -1,0 +1,9 @@
+{ "data":
+    {
+        "order": [
+            { "detailName": "Buku Harry Potter", "detailPrice": 200000 },
+            { "detailName": "Buku Harry Potter", "detailPrice": 200000 },
+            { "detailName": "Buku Harry Potter", "detailPrice": 200000 }
+        ]
+    }
+}

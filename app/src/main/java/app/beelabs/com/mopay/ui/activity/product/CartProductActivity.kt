@@ -7,6 +7,7 @@ import app.beelabs.com.mopay.R
 import app.beelabs.com.mopay.ui.`interface`.IMainView
 import app.beelabs.com.mopay.ui.adapter.CartAdapter
 import kotlinx.android.synthetic.main.activity_cart_product.*
+import support.util.FactoryData
 
 class CartProductActivity : BaseActivity(), IMainView {
 
@@ -14,9 +15,11 @@ class CartProductActivity : BaseActivity(), IMainView {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cart_product)
 
+
+
         cartOrderList.setHasFixedSize(true)
         cartOrderList.layoutManager = LinearLayoutManager(this)
-        cartOrderList.adapter = CartAdapter(this)
+        cartOrderList.adapter = FactoryData.cartPopulate(this)?.let { CartAdapter(it, this) }
 
     }
 }

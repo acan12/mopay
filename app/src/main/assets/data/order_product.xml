@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <order>
+        <detailName>Buku Harry Potter</detailName>
+        <detailPrice>200000</detailPrice>
+    </order>
+    <order>
+        <detailName>Playstation 4</detailName>
+        <detailPrice>3600000</detailPrice>
+    </order>
+    <order>
+        <detailName>Ecommerce </detailName>
+        <detailPrice>250000</detailPrice>
+    </order>
+
+    <order>
+        <detailName>Buku Harry Potter</detailName>
+        <detailPrice>200000</detailPrice>
+    </order>
+    <order>
+        <detailName>Playstation 4</detailName>
+        <detailPrice>3600000</detailPrice>
+    </order>
+    <order>
+        <detailName>Ecommerce </detailName>
+        <detailPrice>250000</detailPrice>
+    </order>
+
+    <order>
+        <detailName>Buku Harry Potter</detailName>
+        <detailPrice>200000</detailPrice>
+    </order>
+    <order>
+        <detailName>Playstation 4</detailName>
+        <detailPrice>3600000</detailPrice>
+    </order>
+    <order>
+        <detailName>Ecommerce </detailName>
+        <detailPrice>250000</detailPrice>
+    </order>
+</data>
