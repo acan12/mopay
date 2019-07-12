@@ -8,10 +8,7 @@ import org.json.JSONObject
 import java.io.IOException
 import java.nio.charset.Charset
 
-class FactoryData(val fileName: String) {
-    val owner: String? = null
-    val orderName: String? = null
-    val orderPrice: String? = null
+class FactoryData {
 
     companion object {
         private fun fetchXmlDataMapper(fileXml: String, context: Context): JSONObject? {
