@@ -15,12 +15,9 @@ class CartProductActivity : BaseActivity(), IMainView {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cart_product)
 
-
-
         cartOrderList.setHasFixedSize(true)
         cartOrderList.layoutManager = LinearLayoutManager(this)
         cartOrderList.adapter = FactoryData.cartPopulate(this)?.let { CartAdapter(it, this) }
-
     }
 }
 
