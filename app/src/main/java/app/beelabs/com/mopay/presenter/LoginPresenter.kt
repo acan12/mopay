@@ -5,5 +5,4 @@ import app.beelabs.com.mopay.model.dao.LoginDao
 
 class LoginPresenter : BasePresenter(), LoginDao.ILoginDao {
 
-
 }
