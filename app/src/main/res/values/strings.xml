@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MoPay</string>
+
+    <string name="description_boarding1">
+        Order from the best local restaurants with easy, on-demand delivery.
+    </string>
 </resources>

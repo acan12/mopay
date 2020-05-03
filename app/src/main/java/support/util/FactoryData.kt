@@ -1,8 +1,6 @@
 package support.util
 
 import android.content.Context
-import app.beelabs.com.mopay.model.pojo.CartMapper
-import com.fasterxml.jackson.databind.ObjectMapper
 import fr.arnaudguyon.xmltojsonlib.XmlToJson
 import org.json.JSONObject
 import java.io.IOException
@@ -34,12 +32,5 @@ class FactoryData {
             }
         }
 
-        fun cartPopulate(context: Context): CartMapper? {
-            val mapper = ObjectMapper()
-//            val json = fetchXmlDataMapper("data/order_product.xml", context).toString()
-            val json = fetchJsonDataMapper("data/order_product.json", context)
-            val cart = mapper.readValue(json, CartMapper::class.java)
-            return cart
-        }
     }
 }

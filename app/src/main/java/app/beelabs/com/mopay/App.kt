@@ -18,7 +18,7 @@ class App : BaseApp() {
     override fun onCreate() {
         super.onCreate()
         setupBuilder(DaggerAppComponent.builder(), this)
-        setupDefaultFont("font/SF-Pro-Display-Black.otf")
+        setupDefaultFont("font/SFProDisplay-Regular")
 
     }
 }
