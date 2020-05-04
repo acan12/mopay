@@ -25,4 +25,8 @@
         <item name="fontPath">SFProDisplay-Regular.ttf</item>
     </style>
 
+    <style name="FontSFProTextRegular" parent="TextAppearance.AppCompat">
+        <item name="fontPath">SFProText-Regular.ttf</item>
+    </style>
+
 </resources>
