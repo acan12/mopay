@@ -84,6 +84,7 @@ dependencies {
     // custom
     implementation 'me.relex:circleindicator:1.2.1@aar'
     implementation 'com.github.smart-fun:XmlToJson:1.4.5'
+    implementation 'com.romandanylyk:pageindicatorview:1.0.3'
 
     // test
     testImplementation 'junit:junit:4.12'
