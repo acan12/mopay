@@ -3,6 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include layout="@layout/nested_onboarding1" />
+    <include layout="@layout/fragment_onboarding1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
