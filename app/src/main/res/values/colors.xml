@@ -6,6 +6,7 @@
     <color name="green">#82D96C</color>
     <color name="yellow">#FFB800</color>
     <color name="grey">#8B8B8B</color>
+    <color name="light_grey">#dcdcdc</color>
     <color name="blue">#0b5de0</color>
 
     <color name="timeline_background">#e5ebec</color>
