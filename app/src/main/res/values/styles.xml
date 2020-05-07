@@ -15,22 +15,29 @@
         <item name="colorPrimaryDark">@color/color_white</item>
     </style>
 
+    <style name="NoActionBarSplashscreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/dark_green</item>
+    </style>
+
 
     <!--  Font  -->
 
     <style name="FontBeautifulPeople" parent="TextAppearance.AppCompat">
-        <item name="fontPath">BeautifulPeople_Regular.ttf</item>
+        <item name="fontPath">font/BeautifulPeople_Regular.ttf</item>
     </style>
     <style name="FontSFProDisplayBlack" parent="TextAppearance.AppCompat">
-        <item name="fontPath">SF-Pro-Display-Black.otf</item>
+        <item name="fontPath">font/SF-Pro-Display-Black.otf</item>
     </style>
 
     <style name="FontSFProDisplayRegular" parent="TextAppearance.AppCompat">
-        <item name="fontPath">SFProDisplay-Regular.ttf</item>
+        <item name="fontPath">font/SFProDisplay-Regular.ttf</item>
     </style>
 
     <style name="FontSFProTextRegular" parent="TextAppearance.AppCompat">
-        <item name="fontPath">SFProText-Regular.ttf</item>
+        <item name="fontPath">font/SFProText-Regular.ttf</item>
     </style>
 
 </resources>
