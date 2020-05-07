@@ -3,12 +3,16 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <!--  Base Color  -->
     <color name="green">#82D96C</color>
     <color name="yellow">#FFB800</color>
     <color name="grey">#8B8B8B</color>
     <color name="light_grey">#dcdcdc</color>
     <color name="blue">#0b5de0</color>
+    <color name="dark_green">#22A45D</color>
 
+    <!--  Element Color  -->
     <color name="timeline_background">#e5ebec</color>
-    <color name="button_green">#22A45D</color>
+
 </resources>

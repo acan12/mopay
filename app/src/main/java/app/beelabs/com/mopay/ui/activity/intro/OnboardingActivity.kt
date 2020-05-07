@@ -1,9 +1,10 @@
-package app.beelabs.com.mopay.ui.activity
+package app.beelabs.com.mopay.ui.activity.intro
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import app.beelabs.com.mopay.R
+import app.beelabs.com.mopay.ui.activity.AppActivity
 import app.beelabs.com.mopay.ui.adapter.OnBoardingViewPagerAdapter
 import app.beelabs.com.mopay.ui.fragment.OnboardingFirstFragment
 import app.beelabs.com.mopay.ui.fragment.OnboardingSecondFragment
