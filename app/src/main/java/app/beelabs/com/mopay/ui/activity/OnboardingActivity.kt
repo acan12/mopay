@@ -2,6 +2,7 @@ package app.beelabs.com.mopay.ui.activity
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import androidx.viewpager.widget.ViewPager
 import app.beelabs.com.mopay.R
 import app.beelabs.com.mopay.ui.adapter.OnBoardingViewPagerAdapter
 import app.beelabs.com.mopay.ui.fragment.OnboardingFirstFragment
@@ -27,6 +28,23 @@ class OnboardingActivity : AppActivity() {
 
         adapter.addFragments(fragments)
         viewPager.adapter = adapter
+
+        viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
+
+            override fun onPageScrollStateChanged(state: Int) {
+            }
+
+            override fun onPageScrolled(
+                position: Int,
+                positionOffset: Float,
+                positionOffsetPixels: Int
+            ) {
+            }
+
+            override fun onPageSelected(position: Int) {
+                currentPage = position
+            }
+        })
 
     }
 }

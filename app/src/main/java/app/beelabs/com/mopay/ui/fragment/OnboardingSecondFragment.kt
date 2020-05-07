@@ -16,8 +16,4 @@ class OnboardingSecondFragment() : BaseFragment() {
     ): View? {
         return LayoutInflater.from(activity).inflate(R.layout.fragment_onboarding2, null, false)
     }
-
-    override fun getRootView(): View {
-        TODO("Not yet implemented")
-    }
 }
