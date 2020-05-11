@@ -2,6 +2,8 @@ package app.beelabs.com.mopay.ui.component.manager
 
 import android.content.Context
 import android.widget.Toast
+import app.beelabs.com.codebase.base.BaseActivity
+import app.beelabs.com.mopay.App
 import app.beelabs.com.mopay.ui.component.IListener
 
 class ListenerManager : IListener {
@@ -9,4 +11,7 @@ class ListenerManager : IListener {
         Toast.makeText(context, "Load Listener", Toast.LENGTH_LONG).show()
     }
 
+    override fun nextOnboardingListener(activity: BaseActivity) {
+        App.getNavigationComponent().homeNavigation().goDashboardPage(activity)
+    }
 }

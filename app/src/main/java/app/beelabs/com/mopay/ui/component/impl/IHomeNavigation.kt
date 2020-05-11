@@ -1,10 +1,9 @@
 package com.demo.bee.ui.component.impl
 
-import android.content.Context
-import android.widget.TextView
+import app.beelabs.com.codebase.base.BaseActivity
 
 interface IHomeNavigation : IBaseNavigation {
 
-    fun goSecondPage(txt: String, context: Context)
+    fun goDashboardPage(activity: BaseActivity)
 
 }

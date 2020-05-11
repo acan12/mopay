@@ -33,7 +33,6 @@ class OnboardingActivity : AppActivity() {
         viewPager.adapter = adapter
 
         viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
-
             override fun onPageScrollStateChanged(state: Int) {
             }
 
@@ -49,7 +48,7 @@ class OnboardingActivity : AppActivity() {
             }
         })
 
-//        App.getNavigationComponent().homeNavigation(Intent())
+        buttonNext.setOnClickListener { App.getListener()!!.nextOnboardingListener(this) }
 
     }
 }
