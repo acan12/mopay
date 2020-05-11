@@ -1,7 +1,7 @@
 package app.beelabs.com.mopay.ui.activity.intro
 
-import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import app.beelabs.com.mopay.App
@@ -23,16 +23,7 @@ class OnboardingActivity : AppActivity() {
         setContentView(R.layout.activity_onboarding)
         setupLightStatusBarMode()
 
-        val adapter = OnBoardingViewPagerAdapter(supportFragmentManager)
-
-        fragments.add(OnboardingFirstFragment())
-        fragments.add(OnboardingSecondFragment())
-        fragments.add(OnboardingThirdFragment())
-
-        adapter.addFragments(fragments)
-        viewPager.adapter = adapter
-
-        viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
+        setupViewPager().addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
             override fun onPageScrollStateChanged(state: Int) {
             }
 
@@ -50,5 +41,18 @@ class OnboardingActivity : AppActivity() {
 
         buttonNext.setOnClickListener { App.getListener()!!.nextOnboardingListener(this) }
 
+    }
+
+    private fun setupViewPager() : ViewPager {
+        val adapter = OnBoardingViewPagerAdapter(supportFragmentManager)
+
+        fragments.add(OnboardingFirstFragment())
+        fragments.add(OnboardingSecondFragment())
+        fragments.add(OnboardingThirdFragment())
+
+        adapter.addFragments(fragments)
+        viewPager.adapter = adapter
+
+        return viewPager
     }
 }
