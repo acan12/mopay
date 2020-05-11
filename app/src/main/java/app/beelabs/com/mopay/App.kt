@@ -4,21 +4,50 @@ import android.content.Context
 import app.beelabs.com.codebase.base.BaseApp
 import app.beelabs.com.codebase.di.component.AppComponent
 import app.beelabs.com.codebase.di.component.DaggerAppComponent
+import app.beelabs.com.mopay.ui.component.DaggerUIComponent
+import app.beelabs.com.mopay.ui.component.IListener
+import app.beelabs.com.mopay.ui.component.SupportSubComponent
+import app.beelabs.com.mopay.ui.component.UIComponent
+import app.beelabs.com.mopay.ui.component.impl.INavigation
+import app.beelabs.com.mopay.ui.component.manager.ListenerManager
+import app.beelabs.com.mopay.ui.component.manager.NavigationManager
+import app.beelabs.com.mopay.ui.component.module.NavModule
 
 class App : BaseApp() {
 
     companion object {
-        var context: Context? = null
+        var uiComponent: UIComponent? = null
+        var supportSubComponent: SupportSubComponent? = null
+        private var instance: App? = null
+
+        fun applicationContext(): Context {
+            return instance!!.applicationContext
+        }
+
+
         fun getAppComponent(): AppComponent? {
-            if (context == null) return null
             return getComponent()
+        }
+
+        fun getNavigationComponent(): INavigation {
+            return uiComponent?.inject(NavigationManager())!!
+        }
+
+        fun getListener(): IListener? {
+            return supportSubComponent?.inject(ListenerManager())
         }
     }
 
     override fun onCreate() {
         super.onCreate()
         setupBuilder(DaggerAppComponent.builder(), this)
-        setupDefaultFont("font/SFProDisplay-Regular")
+        setupDefaultFont("font/SFProDisplay-Regular.ttf")
+
+        uiComponent = DaggerUIComponent.builder().appComponent(getAppComponent())
+            .navModule(NavModule()).build()
+
+        supportSubComponent = DaggerUIComponent.builder().appComponent(getAppComponent()).build()
+            .newSupportSubcomponent()
 
     }
 }

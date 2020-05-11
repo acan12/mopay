@@ -1,8 +1,10 @@
 package app.beelabs.com.mopay.ui.activity.intro
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
+import app.beelabs.com.mopay.App
 import app.beelabs.com.mopay.R
 import app.beelabs.com.mopay.ui.activity.AppActivity
 import app.beelabs.com.mopay.ui.adapter.OnBoardingViewPagerAdapter
@@ -46,6 +48,8 @@ class OnboardingActivity : AppActivity() {
                 currentPage = position
             }
         })
+
+//        App.getNavigationComponent().homeNavigation(Intent())
 
     }
 }
