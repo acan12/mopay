@@ -1,7 +1,7 @@
-package app.beelabs.com.mopay.ui.component.module
+package app.beelabs.com.mopay.ui.component.di.module
 
-import app.beelabs.com.mopay.ui.component.IAction
-import app.beelabs.com.mopay.ui.component.manager.ActionManager
+import app.beelabs.com.mopay.ui.component.di.IAction
+import app.beelabs.com.mopay.ui.component.di.manager.ActionManager
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

@@ -1,4 +1,4 @@
-package app.beelabs.com.mopay.ui.component.manager.nav
+package app.beelabs.com.mopay.ui.component.di.manager.nav
 
 import android.content.Intent
 import app.beelabs.com.codebase.base.BaseActivity

@@ -1,4 +1,4 @@
-package app.beelabs.com.mopay.ui.component
+package app.beelabs.com.mopay.ui.component.di
 
 import android.content.Context
 import app.beelabs.com.codebase.base.BaseActivity

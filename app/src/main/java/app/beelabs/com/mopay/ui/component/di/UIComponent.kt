@@ -1,10 +1,11 @@
-package app.beelabs.com.mopay.ui.component
+package app.beelabs.com.mopay.ui.component.di
 
 import app.beelabs.com.codebase.di.component.AppComponent
-import app.beelabs.com.mopay.ui.component.module.NavModule
-import app.beelabs.com.mopay.ui.component.scope.UIScope
+import app.beelabs.com.mopay.ui.component.di.SupportSubComponent
+import app.beelabs.com.mopay.ui.component.di.module.NavModule
+import app.beelabs.com.mopay.ui.component.di.scope.UIScope
 import com.demo.bee.ui.component.impl.IHomeNavigation
-import app.beelabs.com.mopay.ui.component.impl.INavigation
+import app.beelabs.com.mopay.ui.component.di.impl.INavigation
 import dagger.Component
 
 @UIScope

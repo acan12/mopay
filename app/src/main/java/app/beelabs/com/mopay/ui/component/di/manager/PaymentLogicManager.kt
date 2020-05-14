@@ -1,4 +1,4 @@
-package app.beelabs.com.mopay.ui.component.manager
+package app.beelabs.com.mopay.ui.component.di.manager
 
 import android.content.Context
 import android.widget.Toast

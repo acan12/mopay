@@ -5,11 +5,12 @@ import app.beelabs.com.codebase.base.BaseActivity
 import app.beelabs.com.mopay.R
 import app.beelabs.com.mopay.ui.impl.IMainView
 
-class MainActivity : BaseActivity(), IMainView {
+class MainActivity : AppActivity(), IMainView {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        setupLightStatusBarMode()
     }
 }
 

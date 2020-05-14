@@ -4,14 +4,14 @@ import android.content.Context
 import app.beelabs.com.codebase.base.BaseApp
 import app.beelabs.com.codebase.di.component.AppComponent
 import app.beelabs.com.codebase.di.component.DaggerAppComponent
-import app.beelabs.com.mopay.ui.component.DaggerUIComponent
-import app.beelabs.com.mopay.ui.component.IListener
-import app.beelabs.com.mopay.ui.component.SupportSubComponent
-import app.beelabs.com.mopay.ui.component.UIComponent
-import app.beelabs.com.mopay.ui.component.impl.INavigation
-import app.beelabs.com.mopay.ui.component.manager.ListenerManager
-import app.beelabs.com.mopay.ui.component.manager.NavigationManager
-import app.beelabs.com.mopay.ui.component.module.NavModule
+import app.beelabs.com.mopay.ui.component.di.DaggerUIComponent
+import app.beelabs.com.mopay.ui.component.di.IListener
+import app.beelabs.com.mopay.ui.component.di.SupportSubComponent
+import app.beelabs.com.mopay.ui.component.di.UIComponent
+import app.beelabs.com.mopay.ui.component.di.impl.INavigation
+import app.beelabs.com.mopay.ui.component.di.manager.ListenerManager
+import app.beelabs.com.mopay.ui.component.di.manager.NavigationManager
+import app.beelabs.com.mopay.ui.component.di.module.NavModule
 
 class App : BaseApp() {
 

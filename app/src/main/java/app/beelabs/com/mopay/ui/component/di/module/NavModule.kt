@@ -1,7 +1,7 @@
-package app.beelabs.com.mopay.ui.component.module
+package app.beelabs.com.mopay.ui.component.di.module
 
-import app.beelabs.com.mopay.ui.component.impl.INavigation
-import app.beelabs.com.mopay.ui.component.manager.NavigationManager
+import app.beelabs.com.mopay.ui.component.di.impl.INavigation
+import app.beelabs.com.mopay.ui.component.di.manager.NavigationManager
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

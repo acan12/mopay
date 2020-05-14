@@ -1,7 +1,7 @@
-package app.beelabs.com.mopay.ui.component.module
+package app.beelabs.com.mopay.ui.component.di.module
 
-import app.beelabs.com.mopay.ui.component.IListener
-import app.beelabs.com.mopay.ui.component.manager.ListenerManager
+import app.beelabs.com.mopay.ui.component.di.IListener
+import app.beelabs.com.mopay.ui.component.di.manager.ListenerManager
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

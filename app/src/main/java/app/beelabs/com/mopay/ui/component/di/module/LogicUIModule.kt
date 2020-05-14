@@ -1,9 +1,9 @@
-package app.beelabs.com.mopay.ui.component.module
+package app.beelabs.com.mopay.ui.component.di.module
 
 import com.demo.bee.ui.component.impl.IAnimationLogic
 import com.demo.bee.ui.component.impl.IPaymentLogic
-import app.beelabs.com.mopay.ui.component.manager.AnimationLogicManager
-import app.beelabs.com.mopay.ui.component.manager.PaymentLogicManager
+import app.beelabs.com.mopay.ui.component.di.manager.AnimationLogicManager
+import app.beelabs.com.mopay.ui.component.di.manager.PaymentLogicManager
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
