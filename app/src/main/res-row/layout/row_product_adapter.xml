@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:padding="8dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp">
+
+    <app.beelabs.com.mopay.ui.component.view.RoundRectCornerImageView
+        android:id="@+id/imageProduct"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/demo_food"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/nameProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineHeight="24px"
+        android:lineSpacingExtra="0.3px"
+        android:paddingLeft="18dp"
+        android:text="PakChoy"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/imageProduct"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/descProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="18dp"
+        android:text="Shortbread, chocolat"
+        app:layout_constraintLeft_toRightOf="@+id/imageProduct"
+        app:layout_constraintTop_toBottomOf="@+id/nameProduct" />
+
+    <TextView
+        android:id="@+id/priceProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="20px"
+        android:paddingLeft="18dp"
+        android:text="IDR 20.000"
+        android:textAlignment="textEnd"
+        android:textColor="@color/dark_green"
+        android:textSize="20sp"
+        android:textAppearance="@style/FontSFProDisplayRegular"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
