@@ -16,7 +16,7 @@ class ProductAdapter(private val list: List<Product>) : RecyclerView.Adapter<Pro
     }
 
     override fun getItemCount(): Int {
-        return 3
+        return 20
     }
 
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {

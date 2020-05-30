@@ -4,17 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/color_white"
-    android:padding="8dp"
-    android:layout_marginTop="5dp"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
-    android:layout_marginBottom="5dp">
+    android:paddingTop="20dp"
+    android:background="@color/color_white">
 
     <app.beelabs.com.mopay.ui.component.view.RoundRectCornerImageView
         android:id="@+id/imageProduct"
-        android:layout_width="38dp"
-        android:layout_height="38dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="4dp"
         android:scaleType="centerCrop"
@@ -25,21 +21,22 @@
         android:id="@+id/nameProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:lineHeight="24px"
-        android:lineSpacingExtra="0.3px"
         android:paddingLeft="18dp"
         android:text="PakChoy"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="24sp"
         app:layout_constraintLeft_toRightOf="@+id/imageProduct"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/descProduct"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:paddingLeft="18dp"
-        android:text="Shortbread, chocolat"
+        android:layout_marginStart="18dp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="Shortbread, chocolat dsajdskajd lkdjasd jlkjd asdjklsj as dlas "
+        android:textAlignment="textStart"
         app:layout_constraintLeft_toRightOf="@+id/imageProduct"
         app:layout_constraintTop_toBottomOf="@+id/nameProduct" />
 
@@ -47,14 +44,25 @@
         android:id="@+id/priceProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
         android:lineSpacingExtra="20px"
-        android:paddingLeft="18dp"
         android:text="IDR 20.000"
-        android:textAlignment="textEnd"
-        android:textColor="@color/dark_green"
-        android:textSize="20sp"
         android:textAppearance="@style/FontSFProDisplayRegular"
+        android:textColor="@color/dark_green"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/descProduct" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imageProduct">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/line_grey_color" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
