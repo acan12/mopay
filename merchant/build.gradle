@@ -1,0 +1,66 @@
+apply plugin: "com.android.dynamic-feature"
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+    sourceSets {
+        main.res.srcDirs += ['src/main/res-activity',
+                             'src/main/res-fragment',
+                             'src/main/res-content',
+                             'src/main/res-row']
+    }
+
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+dependencies {
+    ext {
+        coconut_version = '2.3.0-rc.4'
+        dagger2_version = '2.24'
+        google_version = '1.1.0'
+        android_support_version = '28.0.0'
+
+    }
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation project(":app")
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    // RX
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.1'   // RX
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1' // RX
+    implementation "com.github.acan12:coconut:$coconut_version"
+//    implementation "com.google.dagger:dagger:$dagger2_version"
+//    kapt "com.google.dagger:dagger-compiler:$dagger2_version"
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation 'androidx.annotation:annotation:1.1.0'
+}

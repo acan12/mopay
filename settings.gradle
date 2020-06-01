@@ -1,1 +1,2 @@
+include ':merchant'
 include ':app'
