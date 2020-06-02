@@ -7,4 +7,5 @@
     <string name="description_boarding2">Free delivery for new customers via Apple Pay and others payment methods.</string>
     <string name="description_boarding3">Easily find your type of food craving and you’ll get delivery in wide range.</string>
     <string name="title_merchant">Merchant Module</string>
+    <string name="title_paymentfeature">Payment</string>
 </resources>

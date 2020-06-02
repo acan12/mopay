@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/merchant_feature" />
+            <option value="$PROJECT_DIR$/payment_feature" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
