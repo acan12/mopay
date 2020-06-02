@@ -15,6 +15,9 @@ class MerchantHomeActivity : AppActivity() {
         setContentView(R.layout.activity_merchant_home)
         setupLightStatusBarMode()
 
+        val value = intent.getIntExtra("data", 0)
+        deliverToText.text = "Balance : Rp $value"
+
         dataProduct.apply {
             layoutManager = LinearLayoutManager(this@MerchantHomeActivity)
             adapter = ProductAdapter(ArrayList<Product>())

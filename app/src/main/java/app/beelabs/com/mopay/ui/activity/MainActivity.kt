@@ -20,7 +20,7 @@ class MainActivity : AppActivity(), IMainView {
         loadMerchantModule()
 //        setContentView(R.layout.activity_main)
 //        setupLightStatusBarMode()
-
+    
 //        dataProduct.apply {
 //            layoutManager = LinearLayoutManager(this@MainActivity)
 //            adapter = ProductAdapter(ArrayList<Product>())

@@ -1,2 +1,2 @@
-include ':merchant'
+include ':merchant_feature'
 include ':app'
