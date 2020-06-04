@@ -1,11 +1,11 @@
-package com.mojual.merchant.ui.activity
+package com.feature.merchant.ui.activity
 
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import app.beelabs.com.mopay.model.pojo.Product
 import app.beelabs.com.mopay.ui.activity.AppActivity
 import app.beelabs.com.mopay.ui.adapter.ProductAdapter
-import com.mojual.merchant.R
+import com.feature.merchant.R
 import kotlinx.android.synthetic.main.activity_merchant_home.*
 
 

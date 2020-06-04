@@ -15,7 +15,7 @@ class SplashscreenActivity : AppActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splashscreen)
 
-        if (true)
+            if (true)
             splashIntent = Intent(SplashscreenActivity@ this, OnboardingActivity::class.java)
         else
             splashIntent = Intent(SplashscreenActivity@ this, MainActivity::class.java)

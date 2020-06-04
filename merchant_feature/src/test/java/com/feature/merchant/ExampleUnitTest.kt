@@ -1,4 +1,4 @@
-package com.mojual.merchant
+package com.feature.merchant
 
 import org.junit.Test
 

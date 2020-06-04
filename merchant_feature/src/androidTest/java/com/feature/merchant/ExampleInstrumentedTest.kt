@@ -1,4 +1,4 @@
-package com.mojual.merchant
+package com.feature.merchant
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.junit.Test

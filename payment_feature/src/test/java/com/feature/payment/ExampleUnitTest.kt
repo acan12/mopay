@@ -1,4 +1,4 @@
-package com.mopay.payment
+package com.feature.payment
 
 import org.junit.Test
 
