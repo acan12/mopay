@@ -12,7 +12,9 @@
     </dist:module>
 
     <application>
-        <activity android:name="com.feature.merchant.ui.activity.MerchantHomeActivity">
+        <activity
+            android:name="com.feature.merchant.ui.activity.MerchantHomeActivity"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
