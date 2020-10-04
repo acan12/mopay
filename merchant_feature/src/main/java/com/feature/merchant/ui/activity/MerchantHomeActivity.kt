@@ -3,11 +3,14 @@ package com.feature.merchant.ui.activity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import app.beelabs.com.codebase.support.rx.RxTimer
 import app.beelabs.com.mopay.model.pojo.Product
 import app.beelabs.com.mopay.ui.activity.AppActivity
 import com.feature.merchant.R
+import com.feature.merchant.ui.adapter.GridProductAdapter
+import com.feature.merchant.ui.adapter.ProductAdapter
 import kotlinx.android.synthetic.main.activity_merchant_home.*
 
 
@@ -26,12 +29,9 @@ class MerchantHomeActivity : AppActivity(), ProductAdapter.OnProductClickItemLis
                 dataProduct.hasFixedSize()
                 dataProduct.setItemViewCacheSize(20)
                 dataProduct.apply {
+                    layoutManager = GridLayoutManager(this@MerchantHomeActivity, 3)
+                    adapter = GridProductAdapter(ArrayList<Product>(), this@MerchantHomeActivity)
 
-                    layoutManager = LinearLayoutManager(this@MerchantHomeActivity)
-                    adapter = ProductAdapter(
-                        ArrayList<Product>(),
-                        this@MerchantHomeActivity
-                    )
                 }
             }
         })

@@ -1,4 +1,4 @@
-package com.feature.merchant.ui.activity
+package com.feature.merchant.ui.adapter
 
 import android.app.Activity
 import android.view.LayoutInflater
