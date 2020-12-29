@@ -22,9 +22,14 @@
         <item name="colorPrimaryDark">@color/dark_green</item>
     </style>
 
+    <!--  Button  -->
+    <style name="ButtonTheme.Beelabs.Button.Primary" parent="Widget.AppCompat.Button">
+        <item name="elevation">2dp</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+    <!--  endButton  -->
 
     <!--  Font  -->
-
     <style name="FontBeautifulPeople" parent="TextAppearance.AppCompat">
         <item name="fontPath">font/BeautifulPeople_Regular.ttf</item>
     </style>
@@ -39,5 +44,6 @@
     <style name="FontSFProTextRegular" parent="TextAppearance.AppCompat">
         <item name="fontPath">font/SFProText-Regular.ttf</item>
     </style>
+    <!-- endFont -->
 
 </resources>

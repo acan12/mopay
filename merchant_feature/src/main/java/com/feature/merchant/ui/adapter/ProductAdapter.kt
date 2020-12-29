@@ -33,7 +33,7 @@ class ProductAdapter(private val list: List<Product>, var onProductClickItemList
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
 //        holder.itemView.imageProduct.load("https://i.ibb.co/TRTpb0N/download.png")
         Glide.with(onProductClickItemListener as Activity).load(R.drawable.demo_food)
-            .transform(RoundedCorners(10))
+            .transform(RoundedCorners(20))
             .transition(DrawableTransitionOptions.withCrossFade()).into(holder.itemView.imageProduct)
     }
 

@@ -10,6 +10,7 @@
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="550dp"
+        android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonNext"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
@@ -35,7 +36,7 @@
         app:piv_viewPager="@id/viewPager"
         attrs:piv_radius="2dp" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonNext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,6 +49,7 @@
         android:textAppearance="@style/FontSFProDisplayBlack"
         android:textColor="@color/color_white"
         android:textStyle="bold"
+        style="@style/ButtonTheme.Beelabs.Button.Primary"
         app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

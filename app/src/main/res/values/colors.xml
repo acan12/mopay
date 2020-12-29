@@ -14,8 +14,9 @@
     <color name="dark_green">#22A45D</color>
     <color name="black">#010F07</color>
 
-    <!--  Element Color  -->
+    <!--  Component Color  -->
     <color name="timeline_background">#e5ebec</color>
     <color name="line_grey_color">#C4C4C4</color>
+    <color name="colorButtonRippleDarkBg">#40FFFFFF</color>
 
 </resources>
