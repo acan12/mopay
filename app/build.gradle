@@ -49,6 +49,9 @@ android {
                              'src/main/res-row']
     }
     dynamicFeatures = [':merchant_feature', ':payment_feature']
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 allprojects {

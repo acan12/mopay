@@ -1,4 +1,4 @@
-package app.beelabs.com.mopay.ui.fragment
+package app.beelabs.com.mopay.ui.fragment.onboard
 
 import android.os.Bundle
 import android.view.LayoutInflater

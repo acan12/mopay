@@ -44,7 +44,7 @@ class MainActivity : AppActivity(), IMainView {
 
     private fun onSuccessfulLoad(launch: Boolean) {
         if (launch) {
-            launchActivity(IConfig.APPCONFIG.MODULE_MERCHANT_CLASSNAME)
+            launchActivity(IConfig.APPCONFIG.MERCHANT_MODULE_CLASSNAME)
         }
     }
 

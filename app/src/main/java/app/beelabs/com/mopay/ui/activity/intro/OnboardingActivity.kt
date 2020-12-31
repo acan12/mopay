@@ -1,16 +1,15 @@
 package app.beelabs.com.mopay.ui.activity.intro
 
 import android.os.Bundle
-import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import app.beelabs.com.mopay.App
 import app.beelabs.com.mopay.R
 import app.beelabs.com.mopay.ui.activity.AppActivity
 import app.beelabs.com.mopay.ui.adapter.OnBoardingViewPagerAdapter
-import app.beelabs.com.mopay.ui.fragment.OnboardingFirstFragment
-import app.beelabs.com.mopay.ui.fragment.OnboardingSecondFragment
-import app.beelabs.com.mopay.ui.fragment.OnboardingThirdFragment
+import app.beelabs.com.mopay.ui.fragment.onboard.OnboardingFirstFragment
+import app.beelabs.com.mopay.ui.fragment.onboard.OnboardingSecondFragment
+import app.beelabs.com.mopay.ui.fragment.onboard.OnboardingThirdFragment
 import kotlinx.android.synthetic.main.activity_onboarding.*
 
 class OnboardingActivity : AppActivity() {

@@ -10,6 +10,7 @@ import app.beelabs.com.mopay.model.pojo.Product
 import app.beelabs.com.mopay.ui.activity.AppActivity
 import app.beelabs.com.mopay.ui.component.view.GridItemDecoration
 import com.feature.merchant.R
+import com.feature.merchant.databinding.ActivityMerchantHomeBinding
 import com.feature.merchant.ui.adapter.GridProductAdapter
 import com.feature.merchant.ui.adapter.ProductAdapter
 import kotlinx.android.synthetic.main.activity_merchant_home.*
@@ -18,11 +19,11 @@ import kotlinx.android.synthetic.main.activity_merchant_home.*
 class MerchantHomeActivity : AppActivity(), ProductAdapter.OnProductClickItemListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_merchant_home)
+        val binding = ActivityMerchantHomeBinding.inflate(layoutInflater)
         setupLightStatusBarMode()
 
         val value = intent.getIntExtra("data", 0)
-        deliverToText.text = "Balance : Rp $value"
+        binding.tvDeliverText.text = "Balance : Rp $value"
 
 
         RxTimer.doTimer(1000, false, object : RxTimer() {
