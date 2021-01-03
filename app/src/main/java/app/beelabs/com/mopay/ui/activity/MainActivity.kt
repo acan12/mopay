@@ -2,9 +2,12 @@ package app.beelabs.com.mopay.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
 import app.beelabs.com.mopay.BuildConfig
 import app.beelabs.com.mopay.IConfig
 import app.beelabs.com.mopay.R
+import app.beelabs.com.mopay.model.pojo.Product
 import app.beelabs.com.mopay.ui.impl.IMainView
 import com.google.android.play.core.splitinstall.SplitInstallManager
 import com.google.android.play.core.splitinstall.SplitInstallManagerFactory
@@ -21,7 +24,7 @@ class MainActivity : AppActivity(), IMainView {
 //        setContentView(R.layout.activity_main)
         setupLightStatusBarMode()
     
-//        dataProduct.apply {
+//        binding.rvProductList.apply {
 //            layoutManager = LinearLayoutManager(this@MainActivity)
 //            adapter = ProductAdapter(ArrayList<Product>())
 //        }

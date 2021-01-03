@@ -24,7 +24,6 @@ class App : BaseApp() {
             return instance!!.applicationContext
         }
 
-
         fun getAppComponent(): AppComponent? {
             return getComponent()
         }

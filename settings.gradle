@@ -1,3 +1,1 @@
-include ':payment_feature'
-include ':merchant_feature'
-include ':app'
+include (':app', ':payment_feature',':merchant_feature')
