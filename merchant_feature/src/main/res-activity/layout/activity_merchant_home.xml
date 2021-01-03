@@ -69,6 +69,13 @@
             android:padding="8dp" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_banner_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_product_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

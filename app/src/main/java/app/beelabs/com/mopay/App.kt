@@ -1,6 +1,5 @@
 package app.beelabs.com.mopay
 
-import android.content.Context
 import app.beelabs.com.codebase.base.BaseApp
 import app.beelabs.com.codebase.di.component.AppComponent
 import app.beelabs.com.codebase.di.component.DaggerAppComponent
@@ -20,21 +19,9 @@ class App : BaseApp() {
         var supportSubComponent: SupportSubComponent? = null
         private var instance: App? = null
 
-        fun applicationContext(): Context {
-            return instance!!.applicationContext
-        }
-
-        fun getAppComponent(): AppComponent? {
-            return getComponent()
-        }
-
-        fun getNavigationComponent(): INavigation {
-            return uiComponent?.inject(NavigationManager())!!
-        }
-
-        fun getListener(): IListener? {
-            return supportSubComponent?.inject(ListenerManager())
-        }
+        fun getAppComponent(): AppComponent? = getComponent()
+        fun getNavigationComponent(): INavigation = uiComponent?.inject(NavigationManager())!!
+        fun getListener(): IListener? = supportSubComponent?.inject(ListenerManager())
     }
 
     override fun onCreate() {
